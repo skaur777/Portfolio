@@ -1,0 +1,75 @@
+body {
+    font-family: "Arial", sans-serif; /* Change to a more modern font */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text for better contrast */
+    font-size: 19px;
+}
+
+h2, h3, h5 {
+    color: #2c3e50; /* Darker color for headings */
+font-size: 28px;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+    background-color: #3498db; /* Blue button background */
+    color: white; /* White text for buttons */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    font-size: 28px;
+}
+
+.w3-bar .w3-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    font-size: 20px;
+}
+
+.photo-container img {
+    width: 100%; /* Make the photograph rectangular */
+    max-width: 200px; /* Limit width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.flex-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the photograph */
+}
+
+.flex-container .info {
+    padding-left: 10px; /* Reduced padding */
+    font-size: 22px;
+}
+
+.w3-card {
+    border-radius: 10px; /* Rounding the corners of cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadows for depth */
+}
+
+.resume-section {
+    background-color: #ffffff; /* White background for resume section */
+    padding: 20px; /* Padding for the resume section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual appeal */
+}
+
+.footer {
+    background-color: #3498db; /* Matching footer color */
+    color: white; /* White text in footer */
+    padding: 20px 0; /* Top and bottom padding */
+    font-size: 28px;
+}
+
+.footer a {
+    color: white; /* White links */
+    text-decoration: none; /* No underline */
+    padding: 10px; /* Padding around links */
+    font-size: 28px;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      background-color: #f0f0f0; /* Set background color to grey */
+    }
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    .photo-container {
+      text-align: center; /* Center-align the photograph */
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%; /* Make the photograph rectangular */
+      max-width: 200px; /* Adjust maximum width for smaller screens */
+      height: auto; /* Maintain aspect ratio */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    }
+    .resume-section {
+      background-color: #ffffff; /* Background color for resume section */
+      padding: 20px; /* Padding for the resume section */
+      border-radius: 10px; /* Rounding the corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visual appeal */
+    }
+    .flex-container {
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Center items vertically */
+      margin-bottom: 20px; /* Space below the photograph */
+    }
+    .flex-container .info {
+      padding-left: 10px; /* Space between photograph and information */
+    }
+    .contact-section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    .contact-section h3 {
+      color: #333333;
+      text-align: center;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #008080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #005757;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<h2 class="w3-center">Sukhmanadeep Kaur</h2>
+
+<!-- Main Container with Photograph and Information -->
+<div class="flex-container">
+  <!-- Photograph Section -->
+  <div class="w3-col m4" style="flex: 0 0 30%;">
+    <img src="imgs/profile.jpg" alt="Sukhmanadeep Kaur"> <!-- Replace with the actual path to your photo -->
+  </div>
+
+  <!-- Information Section -->
+  <div class="w3-col m8 info" style="flex: 1;">
+    <p class="w3-center"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Aspiring Web Developer</p>
+    <p class="w3-center"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Toronto, Canada</p>
+    <p class="w3-center"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sukhmandeep07@outlook.com</p>
+    <p class="w3-center"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 (416)-824-8767</p>
+  </div>
+</div>
+
+<!-- About Me Section with Resume Download Button -->
+<div class="w3-card w3-white resume-section">
+  <div class="w3-container">
+    <h3 class="w3-center">About Me</h3>
+    <p>Welcome to my portfolio! I am an aspiring web developer with a keen interest in creating dynamic web applications.</p>
+    <a href="others/resume.pdf" download class="w3-button w3-teal w3-block">Download Resume</a>
+  </div>
+</div>
+
+<!-- Left Column -->
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-col m3">
+    <div class="w3-card w3-white">
+      <div class="w3-container">
+        <h3 class="w3-center">Skills</h3>
+        <p>HTML</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
+        </div>
+        <p>CSS</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="w3-light-grey w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div>
+        </div>
+        <p class="w3-large w3-text-theme"><b>Languages</b></p>
+        <p>English</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
+        </div>
+        <p>Punjabi</p>
+        <div class="w3-light-grey w3-round-xlarge">
+          <div class="w3-round-xlarge w3-teal" style="height:24px;width:70%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Column -->
+  <div class="w3-col m7">
+    <div class="w3-card w3-white">
+      <div class="w3-container">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Personal Portfolio Website</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Present</h6>
+          <p>A responsive portfolio website showcasing my projects and skills in web development.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>JavaScript Quiz App</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2023 - Dec 2023</h6>
+          <p>A fun quiz app built using JavaScript to test users' knowledge on various topics.</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="w3-card w3-white w3-margin-top resume-section">
+      <div class="w3-container">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Seneca Polytechnic</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - Present</h6>
+          <p>Studying Computer Programming, focusing on web development and software engineering.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Delhi Public School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2023</h6>
+          <p>Completed secondary education with a focus on science and mathematics.</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Me Section -->
+<div class="w3-container w3-margin-top">
+  <h3 class="w3-center">Contact Me</h3>
+  <form action="submit_contact.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      
+      <input type="submit" value="Submit" class="w3-button w3-teal">
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-teal w3-center">
+  <p>
+    <a href="https://www.linkedin.com/in/sukhmandeep-kaur-b4b08a314/" class="w3-button w3-light-grey w3-margin-bottom">Follow Me</a>
+  </p>
+  <p>© 2024 Sukhmanadeep Kaur</p>
+</footer>
+</body>
+</html>
